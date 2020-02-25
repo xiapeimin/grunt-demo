@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/xiapeimin/grunt-demo#readme",
   "devDependencies": {
-    "grunt-htmlhint": "^0.9.13"
+    "grunt-contrib-csslint": "^2.0.0"
   },
   "dependencies": {
     "grunt": "^1.0.4"
