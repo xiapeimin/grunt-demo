@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/xiapeimin/grunt-demo#readme",
   "devDependencies": {
-    "grunt-contrib-csslint": "^2.0.0"
+    "grunt-eslint": "^22.0.0"
   },
   "dependencies": {
     "grunt": "^1.0.4"
