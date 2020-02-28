@@ -1,15 +1,23 @@
 /* global module: true */
 module.exports = function (grunt) {
   grunt.initConfig({
-    eslint: {
+    run: {
+      api: {
+        options: { wait: false },
+        args: ['./app.js']
+      }
+    },
+    mochacli: {
       options: {
-        eslintrc: './.eslintrc.json'
+        reporter: 'spec',
+        bail: true
       },
-      target: ['*.js']
+        all: ['test/*.js']
     }
   });
 
-  grunt.loadNpmTasks('grunt-eslint');
+  grunt.loadNpmTasks('grunt-run')
+  grunt.loadNpmTasks('grunt-mocha-cli')
 
-  grunt.registerTask('default', ['eslint']);
+  grunt.registerTask('default', ['run', 'mochacli', 'stop:api']);
 };
